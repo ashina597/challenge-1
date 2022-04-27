@@ -1,0 +1,201 @@
+.price
+{
+    font-size: larger;
+    color: hsl(0, 0%, 0%);
+}
+.topnav
+{
+    display: flex;
+    width: 85%;
+    margin: 5%;
+    font-size:x-large;
+    border-bottom: 1px solid hsl(0, 0%, 0%);
+    justify-content: space-between;
+}
+
+.navigation{
+    padding-top: 50px;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.topnav-images{
+    padding-top: 40px;
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+}
+
+.topnav-images img:hover
+{
+opacity: 50%;
+border: 5px solid hsl(26, 100%, 55%); 
+border-radius: 50%;  
+}
+
+.navigation a
+{
+    color: hsl(219, 9%, 45%);;
+    padding: 1%;
+}
+
+.navigation a:hover
+{
+    color: hsl(0, 0%, 0%);
+    border-bottom: 4px solid hsl(26, 100%, 55%);
+}
+
+.topnav span
+{
+    visibility: hidden;
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+}
+
+.topnav span.show
+{
+    visibility: visible;
+    width: auto;
+    height: auto;
+    background-color: hsl(60, 100%, 94%);
+}
+
+.images{
+    width: 5%;
+    height: 5%;
+    margin: 1%;
+    border-radius: 50%;
+}
+
+.images:hover
+{
+opacity: 50%;
+border: 5px solid hsl(26, 100%, 55%);   
+}
+
+.grid_container
+{
+    margin: 5%;
+    display: grid;
+    grid-gap: 1%;
+    padding: 1%;
+    display: flex;
+    
+}
+
+input[type = "submit"]
+{
+    background-color: hsl(26, 100%, 55%);
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+input[type = "submit"]:hover
+{
+    opacity: 50%
+}
+
+input[type = "button"]
+{
+    margin: 1%;
+    background-color: hsl(26, 100%, 55%);
+    width: 30%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+input[type = "button"]:hover
+{
+    opacity: 50%
+}
+
+input[type = "image"]
+{
+    
+    border: none;
+    background-color: hsl(25, 100%, 94%);
+    padding: 1%;
+}
+
+input[type = "text"]
+{
+    border: none;
+    background-color: hsl(25, 100%, 94%);
+    width: 30px;
+    height: 30px;
+    padding: none;
+}
+
+.description
+{
+    margin: 1%;
+    width: auto;
+    height: auto;
+}
+
+.description p
+{
+    color:hsl(219, 9%, 45%);
+    font-size: 16px;
+    font-family: '[Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)';
+    font-weight: 400, 700;
+}
+.description h3
+{
+    color: hsl(26, 100%, 55%);
+}
+
+button 
+{
+    margin: 5px;
+    color: hsl(26, 100%, 55%);
+    border: none;
+    background-color: hsl(25, 100%, 94%);
+    width: 10%;
+    height: 30px;
+    padding: none;
+    border-radius: 10px;
+    font-size: large;
+}
+.mainpic
+{
+    margin: 1%;
+    width: auto;
+    height: auto;
+}
+.mainpic img 
+{
+    margin: 4px;
+    border-radius: 20px;
+}
+
+.mainpic img:hover{
+    opacity: 50%;
+    border: 5px solid hsl(26, 100%, 55%);
+}
+
+input[type = "number"]
+{
+    background-color: hsl(0, 0%, 100%);
+    width: 10%;
+    height: 30px;
+    align-content: center;
+}
+
+.container
+{
+    margin-top: 1%;
+    margin-left: 100px;
+    width: 80%;
+    height: 60%;
+    background-color: hsl(50, 100%, 94%);
+}

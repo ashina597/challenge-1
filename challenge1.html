@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <meta name = "viewport" content="width = device-width,initial-scale=1.0">
+    <head>
+        <link rel = "stylesheet" href = "challenge1.css">  
+    </head>
+</head>
+<body>
+    <div class="container">
+        <!--header-->
+    <div class = "topnav">
+        <div class = "navigation">
+        <img class = "logo" src = "images/logo.svg" width="100px" height="20px">
+        <a >collection</a>
+        <a>men</a>
+        <a>women</a>
+        <a>about</a>
+        <a>contact</a>
+        </div>
+        <div class = "topnav-images">
+            <img src = "images/icon-cart.svg" width = "40px", height="40px" onclick="viewcart()"></img>
+        <img name = "avatar" src = "images/image-avatar.png" width = "40px", height="40px"></img>
+    </div>
+        <!--my cart-->
+
+        <span class id="mycart">
+            <h2>My cart</h2>
+            <p id = "product"></p>
+            <input type="submit" id = "checkout" value = "checkout" width = 100% onclick="closecart()">
+        </span>
+    
+    </div>
+
+    <!--product images-->
+
+    <div class = "grid_container">
+        <div class = "mainpic">
+           <img id = "image1" src = "images/image-product-1-thumbnail.jpg" width = "250" height="250" onclick = "openlightbox()"></img><br> 
+           <img src = "images/image-product-1-thumbnail.jpg" width = "50" height="50" onclick="changeimage()" ></img>
+            <img src = "images/image-product-2-thumbnail.jpg" width = "50" height="50"></img>
+            <img src = "images/image-product-3-thumbnail.jpg" width = "50" height="50"></img>
+            <img src = "images/image-product-4-thumbnail.jpg" width = "50" height="50"></img>
+        </div>
+
+        <!--product description-->
+        <div class = "description">
+            <h3>SNEAKER COMPANY</h3>
+            <h1>Fall limited edition sneakers</h1>
+            <p>These low-profile sneakers are your perfect casual wear
+                companion. Featuring durable rubber outer sole, the will
+                withstand everything the weather can offer.</p><br>
+        
+            <div class = "price">
+                <br><b><big>$125.00</big></b>
+                <button>50%</button><br>
+                <p><s>$250.00</s></p>
+            </div>
+            <div class = "cart">
+                <span class = "increase"><input type="image" src= "images/icon-minus.svg" onclick="increase()"></span>
+                <input type = "text" value = "0" id = "quantity">
+                <span class = "increase"><input type="image" src= "images/icon-plus.svg" onclick="increase()"></span>
+                
+                <input type = "button" name = "add" value = "Add to cart" onclick = addtocart()>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+ // adding to cart
+        function addtocart()
+        {
+            var a = [];
+
+            a.push("<small>Fall limited edition sneakers<small>");
+            document.getElementById("product").innerHTML = a;
+            var c = document.createElement("img");
+            c.src = "images/icon-delete.svg";
+            document.getElementById("product").appendChild(c);
+
+        }
+
+
+        function viewcart()
+        {
+           var popup = document.getElementById("mycart");
+           popup.classList.toggle("show");
+        }
+
+        function closecart()
+        {
+            var popup = document.getElementById("mycart");
+           popup.classList.toggle("show");
+        }
+
+        function removeFromCart()
+        {
+            cart.pop();
+            return cart;
+        }
+
+        
+    </script>
+    </div>
+</body>
+</html>
